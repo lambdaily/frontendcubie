@@ -40,7 +40,6 @@ const ViewComponent: React.FC = () => {
         </p>
       </div>
 
-      <Link className='text-center p-4' to="/v">Go to Home</Link>
 
     </div>
 
