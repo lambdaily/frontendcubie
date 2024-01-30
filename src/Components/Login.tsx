@@ -19,8 +19,10 @@ const Login: React.FC = () => {
       console.log('Token JWT:', token);
       console.log('User Details:', userDetails);
 
+      const urlWithToken = `/view?jwt=${token}`;
+
       // Navigate to the ViewComponent with user details as props
-      navigate('/view', { state: { userDetails } });
+      navigate(urlWithToken, { state: { userDetails } });
     } catch (error) {
       console.error('Error de autenticación:', error);
     }
